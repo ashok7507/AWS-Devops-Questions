@@ -24,8 +24,6 @@
 22. What is the difference between EBS and Instance Store?
 23. Can you increase an EBS volume size without stopping the EC2 instance?
 24. After increasing EBS volume size, why might df -h still show the old size?
-25. How do you extend an XFS filesystem?
-26. How do you extend an ext4 filesystem?
 27. What happens to EBS when an EC2 instance is terminated?
 28. What is an EBS Snapshot?
 29. How would you restore an EC2 instance if its root volume is corrupted?
@@ -52,8 +50,7 @@
 50. EC2 suddenly became very slow. What metrics and Linux commands will you check?
 51. How would you deploy an application on EC2 using Jenkins?
 52. How do you automatically deploy code whenever developers push to GitHub?
-53. How would you create an EC2 instance using Terraform?
-54. How do you bootstrap an EC2 instance automatically when it launches?
+53. How would you create an EC2 instance using Terraform? 
 55. What is User Data in EC2?
 56. How would you install Docker automatically on a newly launched EC2 instance?
 57. How do you monitor EC2 using CloudWatch?
