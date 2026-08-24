@@ -665,4 +665,144 @@
 
 ---  
 
-## 
+## Terraform 
+
+**1. What is Terraform?**
+
+**2. What language does Terraform use?**
+
+**3. What does "declarative" mean in Terraform's context?**
+
+**4. What is a Provider in Terraform?**
+
+**5. What is a Resource in Terraform?**
+
+**6. What is a Terraform Variable?**
+
+**7. What is a Terraform Output?**
+
+**8. What does `terraform init` do?**
+
+**9. What does `terraform plan` do?**
+
+**10. What does `terraform apply` do?**
+
+**11. What does `terraform destroy` do?**
+
+**12. What does `terraform validate` do?**
+
+**13. What does `terraform fmt` do?**
+
+**14. What does `terraform show` do?**
+
+**15. What does `terraform output` do?**
+
+**16. What is `terraform apply -auto-approve` used for?**
+
+**17. What does `terraform destroy -target <resource>` do?**
+
+**21. What does `terraform apply -refresh-only` do?**
+
+**22. What is `terraform get` used for?**
+
+**23. What is `terraform version` used for?**
+
+**24. What file extension do Terraform files use?**
+
+**25. What is `main.tf` typically used for?**
+
+**26. What is the Terraform State file?**
+
+**27. Is Terraform open-source or paid?**
+
+**28. Name a few cloud providers Terraform supports.**
+
+**29. What is the Terraform Registry?**
+
+**30. What is a `.tfvars` file used for?**
+
+**31. What is IaC (Infrastructure as Code)?**
+
+**32. What is Idempotency, and why does it matter in Terraform?**
+
+**33. What is Mutable vs Immutable Infrastructure?**
+
+**34. What is the basic difference between Terraform and AWS CloudFormation?**
+
+**35. What are the different types of blocks in Terraform?**
+
+**36. What is the `terraform {}` block used for?**
+
+**37. What is a `locals` block?**
+
+**38. What is the difference between a variable and a local?**
+
+**39. What is the difference between a resource block and a data block?**
+
+**40. What is the purpose of a module block?**
+
+**41. What is the purpose of a data block?**
+
+**42. What basic data types does Terraform support?**
+
+**47. What is the `.terraform` folder?**
+
+**48. What is `terraform.lock.hcl`?**
+
+**49. Should you commit `.tfstate` to Git?**
+
+**50. Should you commit the `.terraform/` directory to Git?**
+
+**51. What files should typically be added to `.gitignore` in a Terraform project?**
+
+**52. What is a Terraform variable?**
+
+**53. Why are variables used instead of hardcoded values?**
+
+**54. How do you define a variable in Terraform?**
+
+**55. How do you pass values to Terraform variables?**
+
+**56. What is the difference between `variables.tf` and `terraform.tfvars`?**
+
+**57. What is a default value for a Terraform variable?**
+
+**58. What are variable types in Terraform?**
+
+**59. What is variable validation in Terraform?**
+
+**60. What is a Terraform output?**
+
+**61. Why are outputs used in Terraform?**
+
+**64. What are Terraform built-in functions?**
+
+**79. What is a Provisioner in Terraform?**
+
+**81. What is the difference between `local-exec` and `remote-exec`?**
+
+**82. Where does `local-exec` run?**
+
+**83. Where does `remote-exec` run?**
+
+**84. What is `count` in Terraform?**
+
+**86. How do you create multiple resources using `count`?**
+
+**98. What is the difference between `terraform plan` and `terraform apply`?**
+
+**99. What is the difference between `terraform.tfvars` and `variables.tf`?**
+
+**100. What is the difference between a provider and a resource in Terraform?**
+
+**101. What is the difference between a variable and an output?**
+
+**104. Why does Terraform use a state file?**
+
+**107. Why is `terraform plan` important before `terraform apply`?**
+
+**108. Why is `terraform init` required before most Terraform commands?**
+
+**109. Why is Terraform called an Infrastructure as Code tool?**
+
+**110. What are the main advantages of using Terraform?**
