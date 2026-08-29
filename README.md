@@ -181,43 +181,45 @@
 
 ## Terraform 
 
-**1. What is Terraform?** 
-**2. What language does Terraform use?**
-**3. What is a Provider in Terraform?**
-**5. What is a Resource in Terraform?**
-**6. What is a Terraform Variable?**
-**7. What is a Terraform Output?**
-**8. What does `terraform init` do?**
-**9. What does `terraform plan` do?**
-**10. What does `terraform apply` do?**
-**11. What does `terraform destroy` do?**
-**12. What does `terraform validate` do?**
-**13. What does `terraform show` do?**
-**14. What does `terraform output` do?**
-**15. What is `terraform apply -auto-approve` used for?**
-**16. What does `terraform destroy -target <resource>` do?**
-**17. What file extension do Terraform files use?**
-**18. What is `main.tf` typically used for?**
-**19. What is the Terraform State file?**
-**20. Is Terraform open-source or paid?**
-**21. Name a few cloud providers Terraform supports.**
-**22. What is the Terraform Registry?**
-**23. What is a `.tfvars` file used for?**
-**24. What is IaC (Infrastructure as Code)?**
-**25. What is Mutable vs Immutable Infrastructure?**
-**26. What is the basic difference between Terraform and AWS CloudFormation?**
-**27. What is the `terraform {}` block used for?**
-**28. What is the purpose of a module block?**
-**29. What is the `.terraform` folder?**
-**30. What is `terraform.lock.hcl`?**
-**31. Should you commit `.tfstate` to Git?**
-**32. Should you commit the `.terraform/` directory to Git?**
-**33. What is a Terraform variable?**
-**34. What is the difference between `variables.tf` and `terraform.tfvars`?**
-**35. What is a Terraform output?**
-**36. Why are outputs used in Terraform?**
-**37. What is a Provisioner in Terraform?**
-**38. What is the difference between `local-exec` and `remote-exec`?**
-**39. What is the difference between `terraform plan` and `terraform apply`?**
-**40. Why is Terraform called an Infrastructure as Code tool?**
-
+**1. What is Terraform?**   
+**2. What language does Terraform use?**  
+**3. What is a Provider in Terraform?**  
+**5. What is a Resource in Terraform?**  
+**6. What is a Terraform Variable?**  
+**7. What is a Terraform Output?**  
+**8. What does `terraform init` do?**  
+**9. What does `terraform plan` do?**  
+**10. What does `terraform apply` do?**  
+**11. What does `terraform destroy` do?**  
+**12. What does `terraform validate` do?**  
+**13. What does `terraform show` do?**  
+**14. What does `terraform output` do?**  
+**15. What is `terraform apply -auto-approve` used for?**  
+**16. What does `terraform destroy -target <resource>` do?**  
+**17. What file extension do Terraform files use?**  
+**18. What is `main.tf` typically used for?**  
+**19. What is the Terraform State file?**  
+**20. Is Terraform open-source or paid?**  
+**21. Name a few cloud providers Terraform supports.**  
+**22. What is the Terraform Registry?**  
+**23. What is a `.tfvars` file used for?**  
+**24. What is IaC (Infrastructure as Code)?**  
+**25. What is Mutable vs Immutable Infrastructure?**  
+**26. What is the basic difference between Terraform and AWS CloudFormation?**  
+**27. What is the `terraform {}` block used for?**  
+**28. What is the purpose of a module block?**  
+**29. What is the `.terraform` folder?**  
+**30. What is `terraform.lock.hcl`?**  
+**31. Should you commit `.tfstate` to Git?**  
+**32. Should you commit the `.terraform/` directory to Git?**  
+**33. What is a Terraform variable?**  
+**34. What is the difference between `variables.tf` and `terraform.tfvars`?**  
+**35. What is a Terraform output?**  
+**36. Why are outputs used in Terraform?**  
+**37. What is a Provisioner in Terraform?**  
+**38. What is the difference between `local-exec` and `remote-exec`?**  
+**39. What is the difference between `terraform plan` and `terraform apply`?**  
+**40. Why is Terraform called an Infrastructure as Code tool?**  
+**41. What is terraform plugins?**  
+**42. Which terraform language used to write terraform code?**
+**43. What is difference between terraform and cloud formation?**
