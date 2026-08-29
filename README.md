@@ -1,52 +1,30 @@
 ## EC2  
 ---  
 1. What is Amazon EC2?
-2. What is Instance?
-3. What are the different EC2 instance types?
-4. What is the difference between On-Demand, Reserved, Spot, and Savings Plans?
-5. What is Templates?
-6. What is an AMI?
-7. What is different AMI and Template?
-8. what is another name of AMI?
-9. What is EBS?
-10. What is volume and different types of Volume?
-11. What is snapshot?
-12. What is a Security Group?
-13. What is the difference between Security Group and NACL?
-14. Is a Security Group stateful or stateless?
-15. What is an Elastic IP?
-16. What is placement group?
-17. What is Key pair?
-18. What is Network interface?
-19. What is load balancer and Types of load balancer?
-20. What is auto scaling and types of auto scaling?
-21. What happens when you stop and start an EC2 instance?
-22. What is the difference between stop, reboot, and terminate?
-23. How do you create an AMI from an existing EC2 instance?
-24. What is the difference between Public IP and Elastic IP?
-25. What happens to the Public IP after stopping and starting an EC2 instance?
-26. How do you connect to a Linux EC2 instance?
-32. What happens if port 80 is open in the Security Group but the application is not accessible?
-34. How do you troubleshoot Permission Denied (publickey) error?
-39. Can you increase an EBS volume size without stopping the EC2 instance?
-40. After increasing EBS volume size, why might df -h still show the old size?
-43. How would you restore an EC2 instance if its root volume is corrupted?
-44. What is the difference between EBS Snapshot and AMI?
-46. How does an EC2 instance in a private subnet access the internet?
-53. An EC2 instance has a Public IP but you still cannot SSH into it. What will you check?
-54. An EC2 instance can access the internet but cannot be accessed from the internet. Why?
-55. EC2 CPU utilization is 100%. How will you troubleshoot it?
-56. EC2 is running but your website is not opening. What will you check?
-57. SSH suddenly stopped working. What could be the reasons?
-58. EC2 disk usage reached 100%. What will you do?
-59. EC2 is showing Status Check Failed. How will you troubleshoot it?
-60. Application is running on port 8080, but you cannot access it. What will you check?
-61. curl localhost:8080 works inside EC2, but curl Public-IP:8080 does not work. Why?
-62. EC2 can ping another EC2 but cannot connect to port 8080. What could be wrong?
-63. EC2 cannot download packages from the internet. How will you troubleshoot it?
-64. EC2 suddenly became very slow. What metrics and Linux commands will you check?
-68. What is User Data in EC2?
-69. How would you install Docker automatically on a newly launched EC2 instance?
+2. How would you reduce the EC2 cost?
+3. What is Instance?
+4. What are the different EC2 instance types?
+5. What are the different pricing models available for Amazon EC2?
+6. What is the difference between On-Demand, Reserved, Spot, and Savings Plans?
+7. What is an Dedicated host?
+8. What is Templates?
+9. What is an AMI?
+10. What is different AMI and Template?
+11. what is another name of AMI?
+12. What is EBS?
+13. What is volume and different types of Volume?
+14. What is snapshot?
+15. What is a Security Group?
+16. What is the difference between Security Group and NACL?
+17. Is a Security Group stateful or stateless?
+18. What is an Elastic IP?
+19. What is placement group?
+20. What is Key pair?
+21. What is Network interface?
+22. What is load balancer and Types of load balancer?
+23. What is auto scaling and types of auto scaling?
+24. What happens when you stop and start an EC2 instance?
+25. What is the difference between stop, reboot, and terminate?
 
 ---  
 ## IAM  
@@ -65,85 +43,16 @@
 11. What is an Inline Policy?
 12. What is the difference between Inline Policy and Managed Policy?
 13. What is the Principle of Least Privilege?
-14. Why is the Principle of Least Privilege important in IAM?
-15. What is the IAM Policy JSON structure?
-16. What are Effect, Action, Resource, and Condition in an IAM Policy?
-17. What is the difference between Allow and Deny in an IAM Policy?
-18. Which one has higher priority, Allow or Explicit Deny?
-19. What is an Explicit Deny?
-20. What is an Implicit Deny?
-21. How does AWS evaluate IAM policies?
 22. What is the difference between identity-based and resource-based policies?
-23. Which AWS services support resource-based policies?
-24. What is an IAM Trust Policy?
-25. What is the difference between Trust Policy and Permissions Policy?
-26. How does an EC2 instance assume an IAM Role?
-27. How do you attach an IAM Role to an EC2 instance?
-28. Can you change the IAM Role attached to a running EC2 instance?
-29. Why should we use IAM Roles instead of Access Keys for EC2?
-30. What happens if an EC2 instance has an IAM Role with S3 permissions?
-31. How can an EC2 instance access an S3 bucket securely?
-32. How do you give an IAM User read-only access to S3?
-33. How do you give a user access to only one specific S3 bucket?
-34. How do you restrict a user from deleting objects from an S3 bucket?
-35. How do you allow a user to access only specific EC2 instances?
-36. How do you provide read-only access to all AWS resources?
-37. What is the AWS managed ReadOnlyAccess policy?
-38. What is the difference between AdministratorAccess and PowerUserAccess?
-39. What is MFA in IAM?
-40. Why is MFA important for IAM Users?
-41. How do you enable MFA for an IAM User?
-42. How do you enforce MFA using an IAM Policy?
-43. What is an IAM Access Key?
-44. What is the difference between Access Key ID and Secret Access Key?
-45. Where should you store AWS Access Keys securely?
-46. What will you do if an AWS Access Key is accidentally exposed on GitHub?
-47. How do you rotate IAM Access Keys?
-48. Can an IAM User have multiple Access Keys?
-49. How do you check when an IAM Access Key was last used?
-50. What is IAM Access Analyzer?
-51. How do you identify unused IAM Users?
-52. How do you identify unused IAM Roles?
-53. What is IAM Credential Report?
-54. How do you generate an IAM Credential Report?
-55. What information is available in an IAM Credential Report?
-56. What is AWS STS?
-57. What is AssumeRole in AWS?
-58. How does cross-account IAM Role access work?
-59. How would you allow an IAM User from Account A to access resources in Account B?
-60. What is the difference between cross-account Role and cross-account User access?
-61. What is a Service Role in AWS?
-62. How does a service like Lambda use an IAM Role?
-63. How do you create an IAM Role for Lambda?
-64. What permissions are required for Lambda to write logs to CloudWatch?
-65. How would you allow a Lambda function to read from S3?
-66. How would you allow an ECS task to access S3 securely?
-67. What is an Instance Profile in IAM?
-68. What is the difference between IAM Role and Instance Profile?
-69. What is a permissions boundary?
-70. What is the difference between IAM Policy and Permissions Boundary?
-71. What is an IAM Organization SCP?
-72. What is the difference between IAM Policy and Service Control Policy?
-73. Can an SCP grant permissions to a user?
-74. What happens if IAM Policy allows an action but SCP denies it?
-75. How do you restrict access to a specific AWS Region using IAM?
-76. How do you restrict an IAM User from deleting EC2 instances?
-77. How do you allow a user to start and stop EC2 instances but not terminate them?
-78. How do you allow a user to access only specific S3 objects?
-79. How do you restrict an IAM User based on source IP?
-80. How do you restrict access based on MFA?
-81. An IAM User gets AccessDenied. How will you troubleshoot it?
-82. A user has AdministratorAccess but still cannot perform an action. What could be the reason?
-83. An EC2 instance has an IAM Role but cannot access S3. How will you troubleshoot it?
-84. Lambda is getting AccessDenied while accessing S3. How will you troubleshoot it?
-85. An IAM User can access S3 but cannot delete an object. What will you check?
-86. An application is using hardcoded AWS credentials. How would you improve the security?
-87. How would you securely provide AWS permissions to a Jenkins server?
-88. How would you allow Jenkins running on EC2 to deploy resources in AWS?
-89. How would you give Terraform permission to create AWS resources securely?
-90. How would you design IAM for a production DevOps environment?
-
+23. What is access key and secret key?
+24. what is MFA?
 ---  
+## SNS  
+1. What is SNS?
+2. What is topic and its types?
+3. What is subscriptions and its types?
+4. What is secret Manager?
+
 
 ## S3  
 
@@ -151,214 +60,57 @@
 1. What is Amazon S3?
 2. What are the main components of S3?
 3. What is an S3 Bucket?
-4. What is an S3 Object?
-5. What is an S3 Object Key?
-6. What is the maximum size of an S3 object?
-7. What is the maximum number of objects that can be stored in an S3 bucket?
-8. What is the difference between S3 and EBS?
-9. What is the difference between S3 and EFS?
-10. What are the different S3 Storage Classes?
-11. What is S3 Standard?
-12. What is S3 Intelligent-Tiering?
-13. What is S3 Standard-IA?
-14. What is S3 One Zone-IA?
-15. What is S3 Glacier Instant Retrieval?
-16. What is S3 Glacier Flexible Retrieval?
-17. What is S3 Glacier Deep Archive?
-18. How do you choose the correct S3 Storage Class?
-19. What is S3 Versioning?
-20. Why is S3 Versioning important?
-21. How do you enable Versioning on an S3 bucket?
-22. What happens when you delete a versioned S3 object?
-23. What is an S3 Delete Marker?
-24. How do you permanently delete an object from a versioned bucket?
-25. What is S3 Lifecycle Management?
-26. How do you automatically move objects from S3 Standard to Glacier?
-27. How do you automatically delete objects after a specific number of days?
-28. What is an S3 Lifecycle Rule?
-29. What is S3 Bucket Policy?
-30. What is the difference between S3 Bucket Policy and IAM Policy?
-31. What is an S3 Access Control List?
-32. What is the difference between ACL and Bucket Policy?
-33. What is S3 Block Public Access?
-34. Why should S3 Block Public Access be enabled?
-35. How do you make an S3 bucket private?
-36. How do you make an S3 bucket publicly accessible?
-37. How do you allow a specific IAM User to access an S3 bucket?
-38. How do you allow an EC2 instance to access an S3 bucket?
-39. How can an EC2 instance securely access S3 without Access Keys?
-40. What IAM permissions are required to upload an object to S3?
-41. What IAM permissions are required to download an object from S3?
-42. What IAM permissions are required to delete an object from S3?
-43. How do you restrict a user to access only one specific S3 bucket?
-44. How do you restrict a user to access only a specific folder/prefix in S3?
-45. How do you deny everyone except a specific IAM Role from accessing an S3 bucket?
-46. What is S3 Encryption?
-47. What is the difference between SSE-S3 and SSE-KMS?
-48. What is SSE-C?
-49. What is client-side encryption in S3?
-50. Why would you use AWS KMS with S3?
-51. What happens if an S3 object is encrypted with KMS and the user does not have KMS permissions?
-52. How do you enable default encryption on an S3 bucket?
-53. What is S3 Object Lock?
-54. What is S3 Object Lock Retention?
-55. What is Governance Mode in S3 Object Lock?
-56. What is Compliance Mode in S3 Object Lock?
-57. What is S3 Bucket Replication?
-58. What is Cross-Region Replication?
-59. What is Same-Region Replication?
-60. What are the prerequisites for S3 Replication?
-61. How would you replicate objects from one AWS Region to another?
-62. How do you replicate only specific objects using S3 Replication?
-63. What is S3 Static Website Hosting?
-64. How do you host a static website using S3?
-65. What permissions are required for S3 Static Website Hosting?
-66. What is the difference between S3 Static Website Hosting and CloudFront?
-67. How would you serve a private S3 bucket through CloudFront?
-68. What is Origin Access Control in CloudFront?
-69. How do you upload a file to S3 using AWS CLI?
-70. How do you download a file from S3 using AWS CLI?
-71. How do you copy files between two S3 buckets?
-72. What is the difference between aws s3 cp and aws s3 sync?
-73. How do you upload an entire directory to S3?
-74. How do you download an entire S3 bucket?
-75. How do you list all objects in an S3 bucket using AWS CLI?
-76. How do you check the size of an S3 bucket?
-77. How do you delete an S3 object using AWS CLI?
-78. How do you delete an entire S3 bucket using AWS CLI?
-79. What is S3 Multipart Upload?
-80. When would you use Multipart Upload?
-81. What happens if a Multipart Upload fails?
-82. How do you troubleshoot an S3 AccessDenied error?
-83. A user can list the S3 bucket but cannot download objects. What will you check?
-84. A user can upload objects but cannot delete them. What could be the reason?
-85. An EC2 instance cannot access S3. How will you troubleshoot it?
-86. An S3 bucket is accidentally made public. How will you secure it?
-87. A file exists in S3 but gives "Access Denied" when accessed. What will you check?
-88. You uploaded a file to S3 but users are receiving "Access Denied". How will you troubleshoot it?
-89. You uploaded index.html to S3 Static Website Hosting but the website is not opening. What will you check?
-90. S3 returns "Specified Key Does Not Exist". What does this error mean and how will you troubleshoot it?
-91. How would you protect important S3 data from accidental deletion?
-92. How would you design a secure S3 bucket for a production environment?
-93. How would you reduce S3 storage costs for a large production bucket?
-94. How would you monitor S3 bucket activity?
-95. What is S3 Server Access Logging?
-96. What is AWS CloudTrail data event logging for S3?
-97. What is S3 Event Notification?
-98. How can S3 trigger a Lambda function when a file is uploaded?
-99. How can S3 trigger an SQS or SNS notification?
-100. How would you design a production-grade S3 architecture with security, versioning, lifecycle, encryption, logging, and backup?
-
+4. What are different types of s3 bucket?
+5. What is an S3 Object?
+6. What is S3 Versioning?
+7. What is s3 bucket lifecycle policies?
+8. What is ACL in bucket?
+9. What is SSE and CSE?
+10. What is the maximum size of an S3 object?
+11. What is the maximum number of objects that can be stored in an S3 bucket?
+12. What is the difference between S3 and EBS?
+13. What is the difference between S3 and EFS?
+14. What are the different S3 Storage Classes?
+15. What is S3 Standard?
+16. What is S3 Intelligent class?
+17. What is S3 Standard-IA?
+18. What is S3 One Zone-IA?
+19. What is S3 Glacier Instant Retrieval?
+20. What is S3 Glacier Flexible Retrieval?
+21. What is S3 Glacier Deep Archive?
+22. How do you choose the correct S3 Storage Class?
+23. What is S3 Versioning?
+67. What is S3 Static Website Hosting?
+68. How do you host a static website using S3?
+70. What is the difference between S3 Static Website Hosting and CloudFront?
 ---  
 
 ## VPC  
 
 ---  
 1. What is Amazon VPC?
-2. What are the main components of a VPC?
-3. What is a CIDR block?
-4. How do you choose a CIDR range for a VPC?
-5. What is the difference between VPC and Subnet?
-6. What is a Public Subnet?
-7. What is a Private Subnet?
-8. What is the difference between Public and Private Subnet?
-9. What is an Internet Gateway?
-10. How does an Internet Gateway provide internet access to a VPC?
-11. What is a NAT Gateway?
-12. What is the difference between NAT Gateway and Internet Gateway?
-13. Why do we use NAT Gateway in a Private Subnet?
-14. What is a Route Table?
-15. What is the difference between Main Route Table and Custom Route Table?
-16. How does routing work inside a VPC?
-17. What is a default route 0.0.0.0/0?
-18. What is a local route in a VPC Route Table?
-19. What does a Blackhole route mean in a Route Table?
-20. How do you create a Public Subnet?
-21. How do you create a Private Subnet?
-22. How do you make a subnet public?
-23. What is an Availability Zone?
-24. Why should we deploy resources across multiple Availability Zones?
-25. What is a VPC Endpoint?
-26. What is the difference between Gateway Endpoint and Interface Endpoint?
-27. Why would you use an S3 VPC Endpoint?
-28. What is VPC Peering?
-29. What are the limitations of VPC Peering?
-30. Can two VPCs with overlapping CIDR blocks be peered?
-31. What is Transit Gateway?
-32. What is the difference between VPC Peering and Transit Gateway?
-33. When would you use Transit Gateway?
-34. What is a Security Group?
-35. What is a Network ACL?
-36. What is the difference between Security Group and NACL?
-37. Is a Security Group stateful or stateless?
-38. Is a NACL stateful or stateless?
-39. Can you explicitly deny traffic using a Security Group?
-40. Can you explicitly deny traffic using a NACL?
-41. How does NACL rule numbering work?
-42. What happens when no NACL rule matches the traffic?
-43. What is an Elastic Network Interface?
-44. What is an ENI?
-45. Can an ENI be attached to multiple EC2 instances?
-46. What is a Public IP address in a VPC?
-47. What is an Elastic IP address?
-48. What is the difference between Public IP and Elastic IP?
-49. What happens to a Public IP when an EC2 instance is stopped and started?
-50. What is a private IP address?
-51. Can an EC2 instance have multiple private IP addresses?
-52. What is a Secondary Private IP?
-53. What is DNS Resolution in VPC?
-54. What is DNS Hostnames in VPC?
-55. What is DHCP Options Set in VPC?
-56. What is the default VPC?
-57. What resources are automatically created with a default VPC?
-58. What is the difference between Default VPC and Custom VPC?
-59. Can you delete the default VPC?
-60. How do you create a VPC using AWS CLI?
-61. How do you create a VPC using Terraform?
-62. How do you create a subnet using Terraform?
-63. How do you attach an Internet Gateway to a VPC?
-64. How do you associate a Route Table with a subnet?
-65. How do you create a NAT Gateway?
-66. Why does a NAT Gateway require an Elastic IP?
-67. Can a Private Subnet access the internet without a NAT Gateway?
-68. How does an EC2 in a Private Subnet access the internet?
-69. How does an EC2 in a Public Subnet access the internet?
-70. Why can't an EC2 in a Private Subnet receive direct inbound internet traffic?
-71. What happens if a Public Subnet does not have a route to an Internet Gateway?
-72. What happens if a Private Subnet has no route to a NAT Gateway?
-73. EC2 has a Public IP but cannot access the internet. How will you troubleshoot it?
-74. EC2 has a Public IP but you cannot SSH into it. What will you check?
-75. EC2 can connect to the internet but cannot receive inbound traffic. What could be wrong?
-76. EC2 in a Private Subnet cannot access the internet. How will you troubleshoot it?
-77. Two EC2 instances in the same VPC cannot communicate. What will you check?
-78. Two EC2 instances in different subnets cannot communicate. What will you check?
-79. Two EC2 instances in different VPCs cannot communicate. How will you troubleshoot it?
-80. An application works inside EC2 using localhost but cannot be accessed from another EC2. What will you check?
-81. An EC2 instance can ping another EC2 but cannot connect to port 8080. What will you check?
-82. A VPC Route Table shows a Blackhole route. Why does this happen?
-83. How do you troubleshoot a Blackhole route?
-84. NAT Gateway is running but Private EC2 still cannot access the internet. What will you check?
-85. NAT Gateway is costing too much. How would you reduce the cost?
-86. What happens if the NAT Gateway is deployed in a single Availability Zone and that AZ goes down?
-87. How would you design a highly available VPC?
-88. How would you design Public and Private Subnets for a production application?
-89. Where would you deploy a Load Balancer in a VPC?
-90. Where would you deploy application servers in a VPC?
-91. Where would you deploy an RDS database in a VPC?
-92. Why should databases generally be placed in Private Subnets?
-93. What is a DB Subnet Group?
-94. How does an Application Load Balancer communicate with EC2 instances in Private Subnets?
-95. How would you design a three-tier architecture using VPC?
-96. What is the difference between Internet Gateway, NAT Gateway, and VPC Endpoint?
-97. How would you securely connect an on-premises network to AWS VPC?
-98. What is AWS Site-to-Site VPN?
-99. What is AWS Direct Connect?
-100. What is the difference between Site-to-Site VPN and Direct Connect?
-101. How would you connect two VPCs securely?
-102. How would you connect multiple VPCs in different AWS accounts?
-103. How would you troubleshoot a VPC connectivity issue step by step?
-104. How do Security Groups, NACLs, Route Tables, and Gateways work together?
-105. How would you design a secure, highly available, and production-ready VPC for a DevOps environment?
+2. What is subnet?
+3. What is an Internet Gateway?
+4. What is a Route Table?
+5. What is a NAT Gateway?
+6. What is VPC Peering?
+7. What is a Network ACL?
+8. What is a VPC Endpoint?
+9. What is an Availability Zone?
+10. What is Transit Gateway?
+11. What is target group?
+12. What are the main components of a VPC?
+13. What is a CIDR block?
+14. What is the difference between VPC and Subnet?
+15. What is a Public Subnet?
+16. What is a Private Subnet?
+17. What is the difference between Public and Private Subnet?
+19. How does an Internet Gateway provide internet access to a VPC?
+21. What is the difference between NAT Gateway and Internet Gateway?
+22. Why do we use NAT Gateway in a Private Subnet?
+24. What is the difference between Main Route Table and Custom Route Table?
+25. How does routing work inside a VPC?
+28. What does a Blackhole route mean in a Route Table?
 
 ---  
 
