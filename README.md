@@ -137,6 +137,8 @@
 18. How do you monitor RDS?
 19. Which RDS metrics would you monitor?
 20. An RDS database has suddenly become very slow. What would you check first?
+21. Tell me ddiffrence between logs and event?
+22. What is standby instance?
 
 ---  
 
