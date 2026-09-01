@@ -25,7 +25,7 @@
 23. What is auto scaling and types of auto scaling?
 24. What happens when you stop and start an EC2 instance?
 25. What is the difference between stop, reboot, and terminate?
-
+26. How do you secure your aws RDS logs.
 ---  
 ## IAM  
 
