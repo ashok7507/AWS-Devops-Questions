@@ -139,6 +139,11 @@
 20. An RDS database has suddenly become very slow. What would you check first?
 21. Tell me ddiffrence between logs and event?
 22. What is standby instance?
+23. What is the difference between RDS and DynamoDB?
+24. How many Read Replicas can you create?
+25. How do you scale an RDS instance?
+26. What is the difference between scaling vertically and horizontally in RDS?
+27. Your application is creating thousands of database connections. How would you solve this?
 
 ---  
 
